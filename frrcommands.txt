@@ -1,0 +1,17 @@
+List of useful commands for querying and updating FRR Routin Daemon
+
+vtysh
+
+show run
+show ip bgp nei
+
+configure terminal
+router bgp 65002
+address-family ipv4 unicast
+no network 10.2.0.0/16
+network 8.8.8.8/32
+network 8.8.8.9/32
+network 8.8.8.7/32
+network 8.8.8.7/32
+network 7.7.7.7/32
+end
